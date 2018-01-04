@@ -1,0 +1,8 @@
+{
+    "msgVpnName":"default",
+    "queueName":"sample_queue",
+    "accessType":"non-exclusive",
+    "permission":"delete",
+    "egressEnabled":true,
+    "ingressEnabled":true
+}

@@ -40,6 +40,14 @@ They should be added to the Tomcat server's `$CATALINA_HOME/conf/context.xml` co
 
 ## Testing 
 
+The sample application assumes the following entities are provisioned on the Solace broker's default msg-VPN:
+* A queue named 'sample_queue', enabled with full permissions for all
+* A JNDI connection-factory named 'JNDI/CF'
+* A JNDI topic named 'JNDI/topic' mapped to a real Solace topic
+* A JNDI queue named 'JNDI/sample_queue' mapped to the Solace queue 'sample_queue'
+
+A script to create all of these on the default msg-VPN exists in `srd/main/resources/SEMP/SEMP_CREATE.sh`.
+
 After deploying the WAR file and starting the servlet, navigate to the http://localhost:8080/solwebsample 
 link from the Manager page, click on the 'Hello World!' link at the top of the page to issue a GET 
 request to the servlet. This retrieves the latest stats on the messaging activity. If the app is not 

@@ -1,0 +1,10 @@
+<rpc semp-version="soltr/8_6VMR">
+    <jndi>
+        <vpn-name>default</vpn-name>
+        <create>
+            <topic>
+		    <name>JNDI/topic</name>
+            </topic>
+        </create>
+    </jndi>
+</rpc>

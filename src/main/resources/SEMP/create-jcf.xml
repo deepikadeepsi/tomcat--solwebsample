@@ -1,0 +1,10 @@
+<rpc semp-version="soltr/8_6VMR">
+    <jndi>
+        <vpn-name>default</vpn-name>
+        <create>
+            <connection-factory>
+		    <name>JNDI/CF</name>
+            </connection-factory>
+        </create>
+    </jndi>
+</rpc>

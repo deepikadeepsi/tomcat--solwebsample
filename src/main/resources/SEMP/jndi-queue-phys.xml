@@ -1,0 +1,12 @@
+<rpc semp-version="soltr/8_6VMR">
+    <jndi>
+        <vpn-name>default</vpn-name>
+        <queue>
+		<name>JNDI/sample_queue</name>
+            <property>
+                <name>physical-name</name>
+		<value>sample_queue</value>
+            </property>
+        </queue>
+    </jndi>
+</rpc>
