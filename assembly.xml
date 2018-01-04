@@ -16,10 +16,6 @@
             <source>src/main/resources/conf/context-resources.xml</source>
             <outputDirectory>conf</outputDirectory>
         </file>
-        <file>
-            <source>src/main/resources/conf/web-servlets.xml</source>
-            <outputDirectory>conf</outputDirectory>
-        </file>
     </files>
     <!-- use this section to package dependencies -->
     <dependencySets>
