@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!-- inserting these resources into the main $CATALINA_HOME/conf/context.xml
+         will make them available to all deployed applications.
+      -->
+    <Resource name="jms/ConnectionFactory"
+              auth="Container"
+              type="javax.jms.ConnectionFactory"
+              description="JMS Connection Factory"
+              factory="com.solacesystems.naming.JmsResourceFactory"
+              factory.name="JNDI/CF"
+              java.naming.factory.initial="com.solacesystems.jndi.SolJNDIInitialContextFactory"
+              java.naming.provider.url="smf://192.168.56.206"
+              java.naming.security.principal="app_user"
+              java.naming.security.credentials="password" />
+
+    <Resource name="jms/Topic"
+              auth="Container"
+              type="javax.jms.Topic"
+              description="JMS Topic"
+              factory="com.solacesystems.naming.JmsResourceFactory"
+              factory.name="JNDI/topic"
+              java.naming.factory.initial="com.solacesystems.jndi.SolJNDIInitialContextFactory"
+              java.naming.provider.url="smf://192.168.56.206"
+              java.naming.security.principal="app_user"
+              java.naming.security.credentials="password" />
+
+    <Resource name="jms/Queue"
+              auth="Container"
+              type="javax.jms.Queue"
+              description="Solace Queue"
+              factory="com.solacesystems.naming.JmsResourceFactory"
+              factory.name="JNDI/sample_queue"
+              java.naming.factory.initial="com.solacesystems.jndi.SolJNDIInitialContextFactory"
+              java.naming.provider.url="smf://192.168.56.206"
+              java.naming.security.principal="app_user"
+              java.naming.security.credentials="password" />
+
+</Context>
